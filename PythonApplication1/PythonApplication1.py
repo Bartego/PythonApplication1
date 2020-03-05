@@ -2,21 +2,17 @@ from random import random
 from random import seed
 from IPython.display import clear_output
 
-
-
-
 clear_output()
-
 
 
 def player_selection():
     a = random()
     if a <= 0.5:
         a = 0
-        return a
+        print(f"selected value is {a}")
     else:
         a = 1
-        print(a)
+        print(f"selected value is {a}")
 
 
 layout_board = ["#",'7','8','9','4','5','6','1','2','3']
@@ -90,7 +86,7 @@ def game_input():
 clear_output()
 
 
-#player_selection()
+player_selection()
 #print (a)
 #player_input()
 
